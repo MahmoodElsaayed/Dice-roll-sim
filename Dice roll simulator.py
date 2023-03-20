@@ -2,15 +2,15 @@ from random import randint
 
 
 def main():
-    face_number = dice_roller()
-    print(*dice_designer(face_number), sep="\n", end="")
+    dice_side = dice_roller()
+    print(*side_designer(dice_side), sep="\n", end="")
 
 
 def dice_roller():
     return randint(1, 6)
 
 
-def dice_designer(number):
+def side_designer(number):
     n = number
     while n-2 >= 0:
         yield 2 * "🔴"
