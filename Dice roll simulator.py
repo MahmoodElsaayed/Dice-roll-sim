@@ -7,11 +7,7 @@ def main():
 
 
 def dice_roller():
-    while True:
-        try:
-            return randint(1, 6)
-        except ValueError:
-            continue
+    return randint(1, 6)
 
 
 def dice_designer(number):
